@@ -1,3 +1,7 @@
 <body>
-  {{worker}} works on {{task}}
+  <table>
+  {{#each workers}}
+    <tr><td>{{name}}</td><td>is working on</td><td>{{task}}</td></tr>
+  {{/each}}
+  </table>
 </body>
